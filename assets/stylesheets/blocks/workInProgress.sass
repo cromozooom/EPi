@@ -1,0 +1,57 @@
+$workInProgress_baseCollor01: #ac0000
+$workInProgress_secondCollor01: #ac0000
+
+$workInProgress_baseCollor02: #000000
+$workInProgress_secondCollor02: #ffcb00
+
+.container-fluid.no-padding
+	padding: 0
+	.row
+		padding: 0
+
+
+.workInProgress
+	padding-top: 5em
+	padding-bottom: 5em
+	small, p, h2, hr
+		max-width: 80%
+		margin: 0 auto
+	small, p, h2
+		padding: 1em 0
+	h2
+		font-size: 5em
+	small
+		font-size: 1.5em
+		display: inline-block
+
+.acMilan
+	color: white
+	+paralax("../images/bgMilan.jpg")
+	//background: url("../images/bgMilan.jpg") $workInProgress_baseCollor01 50% 50%
+	//background-size: cover
+	// paralax
+	hr
+		border-color: lighten($workInProgress_baseCollor01, 2%)
+	small
+		color: lighten($workInProgress_baseCollor01, 40%)
+
+	p
+		color: darken(white, 10%)
+
+.acMilan
+
+
+.juve
+	color: white
+	+paralax("../images/bgJuve.jpg")
+	//background: url("../images/bgJuve.jpg") $workInProgress_baseCollor02 50% 50%
+	//background-size: cover
+	hr
+		border-color: lighten($workInProgress_baseCollor02, 10%)
+	small
+		color: lighten($workInProgress_baseCollor02, 60%)
+	h2
+		color: $workInProgress_secondCollor02
+
+	p
+		color: darken(white, 10%)
