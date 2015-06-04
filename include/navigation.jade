@@ -1,3 +1,4 @@
+//-include ../config.jade
 .navbar.navbar-inverse.navbar-fixed-top
 	.container-fluid
 		.navbar-header
@@ -9,9 +10,19 @@
 				include ../assets/images/logo.svg
 		.collapse.navbar-collapse.navbar-right
 			ul.nav.navbar-nav
+				if bodyClass == "homePage"
+					//li
+						p Home
+				else
+					li
+						a(href='index.html') Home
+				if bodyClass == "wwd"
+					li.active
+						a(href='wwd.html') What we do
+				else
+					li
+						a(href='wwd.html') What we do
 				li
-					a(href='wwd.html') What we do
+					a(href='#' data-toggle="modal" data-target="#myModal") What we have done
 				li
-					a(href='#') What we have done
-				li
-					a(href='#') Contact us
+					a(href='#' data-toggle="modal" data-target="#myModal") Contact us

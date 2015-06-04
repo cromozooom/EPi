@@ -1,8 +1,12 @@
 extends layout.jade
-append
-	- var bodyClass 			= "wwdPage"
+block config
+	append
+		- var pathToAssets			= "assets/"
+		- var bodyClass 			= "wwd"
+		- var titlePage 			= "Epi home page"
 
 block content
+	include include/navigation.jade
 	include include/whatWeDo.jade
 	include include/megastore.jade
 	//include include/detailsServices.jade

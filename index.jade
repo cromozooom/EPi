@@ -1,8 +1,12 @@
 extends layout.jade
-append
-	- var bodyClass 			= "homePage"
+block config
+	append
+		- var pathToAssets			= "assets/"
+		- var bodyClass 			= "homePage"
+		- var titlePage 			= "Epi home page"
 
 block content
+	include include/navigation.jade
 	include include/video.jade
 	include include/services.jade
 	include include/workInProgress.jade

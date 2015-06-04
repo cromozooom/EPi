@@ -26,15 +26,23 @@ html(lang='en')
 
 	block page
 		body(class="#{bodyClass}")
-			include include/navigation.jade
-
 			block content
-				include include/navigation.jade
-				include include/video.jade
-				include include/services.jade
-				include include/workInProgress.jade
-				include include/project.jade
-				include include/brand.jade
+
+			block modal
+				//- Modal
+				.modal.fade#myModal(tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true")
+					.modal-dialog
+						.modal-content
+							.modal-header
+								button.close(type="button" data-dismiss="modal" aria-label="Close")
+									span(aria-hidden="true")&times;
+								h4.modal-title.myModalLabel
+									| Work in progress page
+							.modal-body
+								p
+									| this page is work in progress
+							.modal-footer
+								button.btn.btn-default(type="button" data-dismiss="modal") Close
 
 			block footerScript
 				//- Bootstrap core JavaScript & jquerry
