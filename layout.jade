@@ -1,5 +1,5 @@
+include config.jade
 block config
-	include config.jade
 
 doctype html
 
@@ -23,7 +23,7 @@ html(lang='en')
 			<![endif]-->
 			//- font google
 			link(href='#{googleFont}' rel='stylesheet' type='text/css')
-
+			//
 	block page
 		body(class="#{bodyClass}")
 			block content
