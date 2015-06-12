@@ -1,3 +1,10 @@
+svg.logo
+	size: 200%
+
+//.flip-container h1
+	//margin: 0
+	//padding: 0
+
 // entire container, keeps perspective
 .flip-container
 	perspective: 1000px
@@ -8,7 +15,8 @@
 .flip-container, .front, .back
 	width: 100%
 	//width: 320px
-	height: 480px
+	height: 300px
+	//height: 480px
 
 // flip speed goes here
 .flipper
@@ -26,13 +34,11 @@
 // front pane, placed above back
 .front
 	z-index: 2
-	background: yellow
 	// for firefox 31
 	transform: rotateY(0deg)
 
 // back, initially hidden pane
 .back
-	background: black
 	transform: rotateY(180deg)
 
 
@@ -48,11 +54,44 @@
 	transform: rotateX(180deg)
 
 .vertical.flip-container .flipper
-	transform-origin: 100% 213.5px; /* half of height */
+	transform-origin: 100% 150px; /* half of height */
 
 .vertical.flip-container:hover .flipper
 	transform: rotateX(-180deg)
 
+
+.juve
+	.front
+		background: #cbcbcb
+	.back
+		background: #FFC325
+		color: white
+.milan
+	.front
+		background: #ED1C24
+	.back
+		background: black
+		color: #ED1C24
+.inter
+	.front
+		background: #86754D
+	.back
+		background: black
+.juves
+	.front
+		background: black
+	.back
+		background: yellow
+.juves
+	.front
+		background: black
+	.back
+		background: yellow
+.juves
+	.front
+		background: black
+	.back
+		background: yellow
 
 // ie 10 support
 // entire container, keeps perspective */
