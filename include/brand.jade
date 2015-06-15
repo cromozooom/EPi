@@ -1,6 +1,9 @@
-.container-fluid.no-gutter
+.container.no-gutter
 	section.clienti.row
-		.col-xs-6.col-sm-2
+		.col-xs-12
+			h2.lead.text-center Our project
+		include ../assets/images/loghi.jade
+		.col-xs-6.col-sm-15
 			.flip-container.vertical(ontouchstart="this.classList.toggle('hover');")
 				.flipper.juve
 					.front
@@ -10,7 +13,15 @@
 					.back
 						//- back content
 						h1.text-center Juventus
-		.col-xs-6.col-sm-2
+						ul
+							li
+								a(href="#")
+									| online store
+							li
+								a(href="#")
+									| retail store
+
+		.col-xs-6.col-sm-15
 			.flip-container.vertical(ontouchstart="this.classList.toggle('hover');")
 				.flipper.milan
 					.front
@@ -20,7 +31,14 @@
 					.back
 						//- back content
 						h1.text-center AC Milan
-		.col-xs-6.col-sm-2
+						ul
+							li
+								a(href="#")
+									| online store
+							li
+								a(href="#")
+									| retail store
+		.col-xs-6.col-sm-15
 			.flip-container.vertical(ontouchstart="this.classList.toggle('hover');")
 				.flipper.inter
 					.front
@@ -30,99 +48,114 @@
 					.back
 						//- back content
 						h1.text-center FC INTER
-		.col-xs-6.col-sm-2
+						ul
+							li
+								a(href="#")
+									| online store
+							li
+								a(href="#")
+									| retail store
+
+		.col-xs-6.col-sm-15
 			.flip-container.vertical(ontouchstart="this.classList.toggle('hover');")
-				.flipper
-					.front
-						//- front content
-						svg.logo(width="250" height="250")
-							use(xlink:href="#f4u")
-					.back
-						//- back content
-						h1.text-center Juventus
-		.col-xs-6.col-sm-2
-			.flip-container.vertical(ontouchstart="this.classList.toggle('hover');")
-				.flipper
+				.flipper.lazio
 					.front
 						//- front content
 						svg.logo(width="250" height="250")
 							use(xlink:href="#lazio")
 					.back
 						//- back content
-						h1.text-center Juventus
-		.col-xs-6.col-sm-2
+						h1.text-center SS Lazio
+						ul
+							li
+								a(href="#")
+									| online store
+		.col-xs-6.col-sm-15
 			.flip-container.vertical(ontouchstart="this.classList.toggle('hover');")
-				.flipper
+				.flipper.hv
 					.front
 						//- front content
 						svg.logo(width="250" height="250")
-							use(xlink:href="#juve")
+							use(xlink:href="#hv")
 					.back
 						//- back content
-						h1.text-center Juventus
-		.col-xs-6.col-sm-2
+						h1.text-center Hellas Verona
+						ul
+							li
+								a(href="#")
+									| online store
+		.col-xs-6.col-sm-15
 			.flip-container.vertical(ontouchstart="this.classList.toggle('hover');")
-				.flipper
-					.front
-						//- front content
-						svg.logo(width="250" height="250")
-							use(xlink:href="#milan")
-					.back
-						//- back content
-						h1.text-center Juventus
-		.col-xs-6.col-sm-2
-			.flip-container.vertical(ontouchstart="this.classList.toggle('hover');")
-				.flipper
-					.front
-						//- front content
-						svg.logo(width="250" height="250")
-							use(xlink:href="#inter")
-					.back
-						//- back content
-						h1.text-center Juventus
-		.col-xs-6.col-sm-2
-			.flip-container.vertical(ontouchstart="this.classList.toggle('hover');")
-				.flipper
+				.flipper.f4u
 					.front
 						//- front content
 						svg.logo(width="250" height="250")
 							use(xlink:href="#f4u")
 					.back
 						//- back content
-						h1.text-center Juventus
-		.col-xs-6.col-sm-2
+						h1.text-center football4u
+						ul
+							li
+								a(href="#")
+									| online store
+		.col-xs-6.col-sm-15
 			.flip-container.vertical(ontouchstart="this.classList.toggle('hover');")
-				.flipper
+				.flipper.palermo
 					.front
 						//- front content
 						svg.logo(width="250" height="250")
-							use(xlink:href="#lazio")
+							use(xlink:href="#palermo")
 					.back
 						//- back content
-						h1.text-center Juventus
-		.col-xs-6.col-sm-2
+						h1.text-center Palermo
+						ul
+							li
+								a(href="#")
+									| online store
+		.col-xs-6.col-sm-15
 			.flip-container.vertical(ontouchstart="this.classList.toggle('hover');")
-				.flipper
+				.flipper.fir
 					.front
 						//- front content
 						svg.logo(width="250" height="250")
-							use(xlink:href="#juve")
+							use(xlink:href="#fir")
 					.back
 						//- back content
-						h1.text-center Juventus
-		.col-xs-6.col-sm-2
+						h1.text-center FIR
+						ul
+							li
+								a(href="#")
+									| online store
+		.col-xs-6.col-sm-15
 			.flip-container.vertical(ontouchstart="this.classList.toggle('hover');")
-				.flipper
+				.flipper.olimpia
 					.front
 						//- front content
 						svg.logo(width="250" height="250")
-							use(xlink:href="#milan")
+							use(xlink:href="#olimpia")
 					.back
 						//- back content
-						h1.text-center Juventus
+						h1.text-center Olimpia Milano
+						ul
+							li
+								a(href="#")
+									| online store
+		.col-xs-6.col-sm-15
+			.flip-container.vertical(ontouchstart="this.classList.toggle('hover');")
+				.flipper.dj
+					.front
+						//- front content
+						svg.logo(width="250" height="250")
+							use(xlink:href="#dj")
+					.back
+						//- back content
+						h1.text-center DJ
+						ul
+							li
+								a(href="#")
+									| online store
 
-	section.clienti.row
-
+	//- section.clienti.row
 		.col-xs-12
 			h2.lead.text-center I nostri clienti
 			include ../assets/images/loghi.jade

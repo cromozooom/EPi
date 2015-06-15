@@ -54,7 +54,7 @@ svg.logo
 	transform: rotateX(180deg)
 
 .vertical.flip-container .flipper
-	transform-origin: 100% 150px; /* half of height */
+	transform-origin: 100% 150px /* half of height */
 
 .vertical.flip-container:hover .flipper
 	transform: rotateX(-180deg)
@@ -65,86 +65,157 @@ svg.logo
 		background: #cbcbcb
 	.back
 		background: #FFC325
+	a
+		color: white
+	h1
 		color: white
 .milan
 	.front
 		background: #ED1C24
 	.back
 		background: black
-		color: #ED1C24
+	a
+		color: white
+	h1
+		color: white
 .inter
 	.front
 		background: #86754D
 	.back
-		background: black
-.juves
-	.front
-		background: black
-	.back
-		background: yellow
-.juves
-	.front
-		background: black
-	.back
-		background: yellow
-.juves
-	.front
-		background: black
-	.back
-		background: yellow
+		background: #005CB9
+	a
+		color: white
+	h1
+		color: white
 
-// ie 10 support
-// entire container, keeps perspective */
-//.flip-container
-//	perspective: 1000
-//	transform-style: preserve-3d
-//	//  UPDATED! flip the pane when hovered */
-//	:hover .back
-//		transform: rotateY(0deg)
-//
-//	:hover .front
-//		transform: rotateY(180deg)
-//
-//.flip-container, .front, .back
-//	width: 320px
-//	height: 480px
-//
-//// flip speed goes here */
-//.flipper
-//	transition: 0.6s
-//	transform-style: preserve-3d
-//
-//	position: relative
-//
-//// hide back of pane during swap */
-//.front, .back
-//	backface-visibility: hidden
-//	transition: 0.6s
-//	transform-style: preserve-3d
-//
-//	position: absolute
-//	top: 0
-//	left: 0
-//
-////  UPDATED! front pane, placed above back */
-//.front
-//	z-index: 2
-//	transform: rotateY(0deg)
-//
-//// back, initially hidden pane */
-//.back
-//	transform: rotateY(-180deg)
-//
-//// Some vertical flip updates
-//
-//.vertical.flip-container
-//	position: relative
-//
-//	.back
-//		transform: rotateX(180deg)
-//
-//	:hover .back
-//		transform: rotateX(0deg)
-//
-//	:hover .front
-//		transform: rotateX(180deg)
+.lazio
+	.front
+		background: #D0A32C
+	.back
+		background: #77D1F6
+	a
+		color: white
+	h1
+		color: white
+
+.hv
+	.front
+		background: #172983
+	.back
+		background: #FFED00
+	a
+		color: black
+	h1
+		color: black
+
+.f4u
+	.front
+		background: #2B2D28
+	.back
+		background: #b5ff00
+	a
+		color: black
+	h1
+		color: black
+
+.palermo
+	.front
+		background: #F7B7D3
+	.back
+		background: #C5A55E
+	a
+		color: black
+	h1
+		color: black
+
+.olimpia
+	.front
+		background: #EE3123
+	.back
+		background: #383739
+	a
+		color: white
+	h1
+		color: white
+
+.dj
+	.front
+		background: #1968b3
+	.back
+		background: #b00f1f
+		a
+			color: white
+	h1
+		color: white
+
+.fir
+	.front
+		background: #0032A0
+		background: #007852
+	.back
+		background: #0032A0
+		a
+			color: white
+	h1
+		color: white
+
+
+
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+	// ie 10 support
+	// entire container, keeps perspective */
+	.flip-container
+		perspective: 1000
+		transform-style: preserve-3d
+		//  UPDATED! flip the pane when hovered */
+		:hover .back
+			transform: rotateY(0deg)
+
+		:hover .front
+			transform: rotateY(180deg)
+
+	.flip-container, .front, .back
+		width: 320px
+		height: 480px
+
+	// flip speed goes here */
+	.flipper
+		transition: 0.6s
+		transform-style: preserve-3d
+
+		position: relative
+
+	// hide back of pane during swap */
+	.front, .back
+		backface-visibility: hidden
+		transition: 0.6s
+		transform-style: preserve-3d
+
+		position: absolute
+		top: 0
+		left: 0
+
+	//  UPDATED! front pane, placed above back */
+	.front
+		z-index: 2
+		transform: rotateY(0deg)
+
+	// back, initially hidden pane */
+	.back
+		transform: rotateY(-180deg)
+
+	// Some vertical flip updates
+
+	.vertical.flip-container
+		position: relative
+
+		.back
+			transform: rotateX(180deg)
+
+		:hover .back
+			transform: rotateX(0deg)
+
+		:hover .front
+			transform: rotateX(180deg)
