@@ -4,12 +4,42 @@ block config
 	- var pathToAssets			= "assets/"
 	- var bodyClass 			= "homePage"
 	- var titlePage 			= "Epi home page"
+	- var phone01				= "02 263 0321"
+	- var phone02				= ""
+	- var address				= "Via Privata Pietro Magistretti, 10, 20128 Milano, IVA: 11670080156"
+	- var mailContact 			= "milanmegastore@gmail.com"
+
 
 block content
 	include include/navigation.jade
 	//-include include/video.jade
 	include include/services.jade
 	include include/brand.jade
+
+	section#footer
+		.container-fluid
+			.row
+				.col-xs-12
+					.container
+						.row
+							.col-xs-12.footer-main
+								p.pull-left
+									| tel 
+									a(href="#{phone01}") #{phone01}
+									a(href="#{phone02}") #{phone02}
+									br
+									span #{address}
+								p.pull-right
+									a.btn.btn-primary(href="mailto:#{mailContact}?Subject=mesaggio%20Milan%20Melgastore") Contact Us
+							//-.col-xs-12.footer-cred
+								.pull-left
+									p © 2015 AC Milan
+									p
+										a(href="") Privacy Policy
+									p
+										a(href="") Terms of Use
+								.pull-right
+									p Website by soloPX - Design
 	//- include include/workInProgress.jade
 	//- include include/project.jade
 

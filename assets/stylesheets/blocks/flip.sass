@@ -15,7 +15,7 @@ svg.logo
 .flip-container, .front, .back
 	width: 100%
 	//width: 320px
-	height: 300px
+	height: 260px
 	//height: 480px
 
 // flip speed goes here
@@ -54,38 +54,31 @@ svg.logo
 	transform: rotateX(180deg)
 
 .vertical.flip-container .flipper
-	transform-origin: 100% 150px /* half of height */
+	transform-origin: 100% 130px /* half of height */
 
 .vertical.flip-container:hover .flipper
 	transform: rotateX(-180deg)
-
 
 .juve
 	.front
 		background: #cbcbcb
 	.back
 		background: #FFC325
-	a
-		color: white
-	h1
+	h3
 		color: white
 .milan
 	.front
 		background: black
 	.back
 		background: #ED1C24
-	a
-		color: white
-	h1
+	h3
 		color: white
 .inter
 	.front
 		background: #005CB9
 	.back
 		background: #86754D
-	a
-		color: white
-	h1
+	h3
 		color: white
 
 .lazio
@@ -94,9 +87,7 @@ svg.logo
 	.back
 		background: #D0A32C
 		background: #003876
-	a
-		color: white
-	h1
+	h3
 		color: white
 
 .hv
@@ -104,8 +95,6 @@ svg.logo
 		background: #202945
 	.back
 		background: #FFAF00
-	a
-		color: black
 	h1
 		color: black
 
@@ -114,8 +103,6 @@ svg.logo
 		background: #2B2D28
 	.back
 		background: #b5ff00
-	a
-		color: black
 	h1
 		color: black
 
@@ -124,8 +111,6 @@ svg.logo
 		background: #F7B7D3
 	.back
 		background: #C5A55E
-	a
-		color: black
 	h1
 		color: black
 
@@ -134,9 +119,7 @@ svg.logo
 		background: #EE3123
 	.back
 		background: #383739
-	a
-		color: white
-	h1
+	h3
 		color: white
 
 .dj
@@ -144,9 +127,7 @@ svg.logo
 		background: #1968b3
 	.back
 		background: #b00f1f
-		a
-			color: white
-	h1
+	h3
 		color: white
 
 .fir
@@ -156,10 +137,42 @@ svg.logo
 	.back
 		background: #007852
 		//background: #0032A0
-		a
-			color: white
-	h1
+	h3
 		color: white
+
+///////////////////////////
+
+
+.back .btn-ghost-Juve
+	@include button-variant-ghost(lighten($juve-sec-color, 60%), darken($juve-sec-color, 30%))
+
+.back .btn-ghost-Milan
+	@include button-variant-ghost($white, darken($milan-sec-color, 60%))
+
+.back .btn-ghost-Inter
+	@include button-variant-ghost($white, darken($inter-sec-color, 20%))
+
+.back .btn-ghost-Lazio
+	//@include button-variant-ghost($white, darken($lazio-prim-color, 20%))
+	@include button-variant-ghost(lighten($lazio-sec-color, 40%), lighten($lazio-prim-color, 0%))
+
+.back .btn-ghost-f4u
+	@include button-variant-ghost(darken($f4u-sec-color, 20%), darken($f4u-prim-color, 20%))
+
+.back .btn-ghost-palermo
+	@include button-variant-ghost(lighten($palermo-prim-color, 20%), darken($palermo-sec-color, 40%))
+
+.back .btn-ghost-verona
+	@include button-variant-ghost(lighten($verona-prim-color, 20%), darken($verona-sec-color, 40%))
+
+.back .btn-ghost-olimpia
+	@include button-variant-ghost(lighten($olimpia-prim-color, 0%), lighten($olimpia-sec-color, 40%))
+
+.back .btn-ghost-dj
+	@include button-variant-ghost(lighten($dj-sec-color, 40%), lighten($dj-prim-color, 100%))
+
+.back .btn-ghost-fir
+	@include button-variant-ghost(lighten($fir-sec-color, 40%), lighten($fir-prim-color, 100%))
 
 
 
