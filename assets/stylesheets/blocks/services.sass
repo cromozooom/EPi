@@ -5,15 +5,20 @@
 
 .circleHover
 	fill: transparent
-	pointer-events: all
+	pointer-events: none
 link:hover
 	.circleHover
 		fill: black !important
+		pointer-events: none
 
 .toltip
 	display: block
 	overflow: hidden
 	//background-color: red
+svg
+	.text
+		bottom: 0
+		text-align: center
 
 .logo
 	width: 100%
