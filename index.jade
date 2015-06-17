@@ -6,7 +6,7 @@ block config
 	- var titlePage 			= "Epi home page"
 	- var phone01				= "+39 02.26.30.321"
 	- var phone02				= ""
-	- var address				= "Via Privata Pietro Magistretti, 10, 20128 Milano, IVA: 11670080156"
+	- var address				= "Via Privata Pietro Magistretti, 10, 20128 Milano, <br> IVA: 11670080156"
 	- var mailContact 			= "info@episrl.it"
 
 
@@ -24,13 +24,16 @@ block content
 						.row
 							.col-xs-12.footer-main
 								p.pull-left
-									| EPi srl
+									| EPI srl
 									br
 									| tel 
 									a(href="#{phone01}") #{phone01}
 									a(href="#{phone02}") #{phone02}
 									br
-									span #{address}
+									span Via Privata Pietro Magistretti, 10, 20128 Milano,
+									br
+									small
+										| IVA: 11670080156
 								p.pull-right
 									a.btn.btn-primary(href="mailto:#{mailContact}") Contact Us
 							//-.col-xs-12.footer-cred
